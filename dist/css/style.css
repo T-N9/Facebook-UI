@@ -9,6 +9,8 @@
 
 body {
   background-color: #18191A;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .nav {
@@ -18,6 +20,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 .left .left-box {
@@ -277,7 +281,113 @@ body {
   color: white;
 }
 
-.yaryi {
-  height: 300vh;
+.left-body {
+  width: 22%;
+  height: 90vh;
+  position: fixed;
+  top: 60px;
+  left: 0;
+}
+
+.left-body .personal {
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 8px;
+}
+
+.left-body .personal .personal-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #e4e6eb;
+  font-size: 15px;
+}
+
+.left-body .personal .personal-text i {
+  font-size: 8px;
+  color: #2d88ff;
+  margin-right: 5px;
+}
+
+.left-body .personal .personal-text .noti {
+  color: #2d88ff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.left-body .personal #profile img {
+  width: 28px;
+  border-radius: 50%;
+}
+
+.left-body .personal .personal-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px;
+  margin-left: 9px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+.left-body .personal .personal-item:hover {
+  cursor: pointer;
+  background-color: #303031;
+}
+
+.left-body .personal .personal-item:hover #down-ico {
+  background-color: #4E4F50;
+}
+
+.left-body .personal .personal-item .personal-logo {
+  width: 28px;
+}
+
+.left-body .personal .personal-item #down-ico {
+  width: 28px;
+  background-color: #303031;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-body:hover {
+  overflow-y: scroll;
+}
+
+.center-body {
+  width: 55%;
+  height: 90vh;
+  margin: auto;
+  padding-top: 60px;
+  background-color: white;
+}
+
+.right-body {
+  width: 20%;
+  position: fixed;
+  top: 60px;
+  right: 0px;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4E4F50;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

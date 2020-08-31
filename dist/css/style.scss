@@ -20,13 +20,19 @@ $dark:#18191A;
     color: $text;
 }
 body{
-    background-color: $dark;
+    background-color:$dark;
+    height: 100vh;
+    overflow-y: scroll;
+    
 }
 .nav{
     background-color: $seme-dark;
     height: 60px;
     border-bottom:0.1px solid #3A3B3C;
     display: flex;
+    position: fixed;
+    width: 100%;
+    
 }
 .left{
     .left-box{
@@ -216,6 +222,110 @@ body{
         }
     }
 }
-.yaryi{
-    height: 300vh;
+//body starts
+// .fb-body{
+//     display: flex;
+//     justify-content: space-between;
+//     ::-webkit-scrollbar{
+//         background: transparent;
+//     }
+//     ::-webkit-scrollbar-thumb{
+//         background-color: $hover-3;
+//     }
+// }
+
+.left-body{
+    width: 22%;
+    height: 90vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    
+    .personal{
+        margin-top: 15px;
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        padding-bottom: 8px;
+        .personal-text{
+            margin-left: 10px;
+            font-weight: bold;
+            color: $text-2;
+            font-size: 15px;
+            i{
+                font-size: 8px;
+                color: $primary-color;
+                margin-right: 5px;
+            }
+            .noti{
+                color: $primary-color;
+                font-size: 12px;
+                font-weight: normal;
+                
+            }
+        }
+        #profile{
+            img{
+                width: 28px;
+                border-radius: 50%;
+            }
+        }
+        .personal-item{
+            display: flex;
+            align-items: center;
+            padding: 7px;
+            margin-left: 9px;
+            border-radius: 10px;
+            height: 45px;
+            &:hover{
+                cursor: pointer;
+                background-color: #303031;
+                #down-ico{
+                    background-color: $hover-3;
+                }
+            }
+            .personal-logo{
+                width: 28px;
+            }
+            #down-ico{
+                width: 28px;
+                background-color: $hover-dark;
+                padding: 8px;
+                border-radius: 50%;
+                font-size: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    
+   &:hover{
+    overflow-y: scroll;
+}
+    
+    
+}
+.center-body{
+    width: 55%;
+    height: 90vh;
+    margin: auto;
+    padding-top: 60px;
+    background-color: white;
+    
+}
+.right-body{
+    width: 20%;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $hover-3;
+    border-radius: 10px;
+    
 }
