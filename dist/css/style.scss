@@ -297,12 +297,98 @@ body{
             }
         }
     }
+    .shortcuts{
+        margin-top: 15px;
+        padding-bottom: 8px;
+        #shortcuts-heading{
+            display: flex;
+            justify-content: space-between;
+            #shortcuts-heading-h1{
+                font-size: 17px;
+                font-weight: bold;
+                margin-left: 15px;
+            }
+            #btn{
+                display: none;
+            }
+            
+            
+        }
+        // &:hover{
+        //     #shortcuts-heading{
+        //     #btn{
+        //         cursor: pointer;
+        //         display: block;
+        //         position: absolute;
+        //         right: 20px;
+        //         z-index: 4;
+        //         color: $primary-color;
+        //         margin-right: 10px;
+        //         margin-top: -10px;
+        //         padding: 10px;
+        //         border-radius: 5px;
+        //         &:hover{
+        //             background-color: $hover-3;
+        //         }
+        //     }
+        // }
+
     
+        .personal-text{
+            margin-left: 10px;
+            font-weight: bold;
+            color: $text-2;
+            font-size: 15px;
+            i{
+                font-size: 8px;
+                color: $primary-color;
+                margin-right: 5px;
+            }
+            .noti{
+                color: $primary-color;
+                font-size: 12px;
+                font-weight: normal;
+                
+            }
+        }
+        #profile{
+            img{
+                width: 28px;
+                border-radius: 50%;
+            }
+        }
+        .personal-item{
+            display: flex;
+            align-items: center;
+            padding: 7px;
+            margin-left: 9px;
+            border-radius: 10px;
+            height: 45px;
+            &:hover{
+                cursor: pointer;
+                background-color: #303031;
+                #down-ico{
+                    background-color: $hover-3;
+                }
+            }
+            .personal-logo{
+                width: 28px;
+            }
+            #down-ico{
+                width: 28px;
+                background-color: $hover-dark;
+                padding: 8px;
+                border-radius: 50%;
+                font-size: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
    &:hover{
     overflow-y: scroll;
-}
-    
-    
+   }
 }
 .center-body{
     width: 55%;
@@ -325,7 +411,6 @@ body{
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: $hover-3;
-    border-radius: 10px;
-    
+    background-color: $hover-2;
+    border-radius: 10px;  
 }

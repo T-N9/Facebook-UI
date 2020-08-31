@@ -362,6 +362,97 @@ body {
           align-items: center;
 }
 
+.left-body .shortcuts {
+  margin-top: 15px;
+  padding-bottom: 8px;
+}
+
+.left-body .shortcuts #shortcuts-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-body .shortcuts #shortcuts-heading #shortcuts-heading-h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.left-body .shortcuts #shortcuts-heading #btn {
+  display: none;
+}
+
+.left-body .shortcuts .personal-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #e4e6eb;
+  font-size: 15px;
+}
+
+.left-body .shortcuts .personal-text i {
+  font-size: 8px;
+  color: #2d88ff;
+  margin-right: 5px;
+}
+
+.left-body .shortcuts .personal-text .noti {
+  color: #2d88ff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.left-body .shortcuts #profile img {
+  width: 28px;
+  border-radius: 50%;
+}
+
+.left-body .shortcuts .personal-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px;
+  margin-left: 9px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+.left-body .shortcuts .personal-item:hover {
+  cursor: pointer;
+  background-color: #303031;
+}
+
+.left-body .shortcuts .personal-item:hover #down-ico {
+  background-color: #4E4F50;
+}
+
+.left-body .shortcuts .personal-item .personal-logo {
+  width: 28px;
+}
+
+.left-body .shortcuts .personal-item #down-ico {
+  width: 28px;
+  background-color: #303031;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .left-body:hover {
   overflow-y: scroll;
 }
@@ -387,7 +478,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4E4F50;
+  background-color: #3A3B3C;
   border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
