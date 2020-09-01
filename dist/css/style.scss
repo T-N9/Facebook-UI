@@ -399,11 +399,86 @@ body{
     
 }
 .right-body{
-    width: 20%;
+    width: 22%;
     position: fixed;
     top: 60px;
     right: 0px;
-
+    .your-pages{
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        padding-bottom: 8px;
+        #your-pages-heading{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+            #your-pages-heading-h1{
+                font-size: 17px;
+                font-weight: bold;
+                margin-left: 15px;
+            }
+            #ico{
+                padding: 10px;
+                background-color: $dark;
+                border-radius: 50%;
+                margin-right: 2px;
+                position: fixed;
+                right: 3px;
+                margin-top: -5px;
+                font-size: 10px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $hover-2;
+                }
+            }
+        }
+        .music-page{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 5px;
+            height: 45px;
+            
+            img{
+                width: 28px;
+                margin-right: 10px;
+            }
+            .music-text{
+                font-size: 15px;
+                font-weight: bold;
+                color: $text-2;
+            }
+            &:hover{
+                background-color: $hover-3
+            }
+        }
+        .sub-page{
+            display: flex;
+            align-items: center;
+            padding:5px 0 5px 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            height: 38px;
+            margin-left: 17px;
+            
+            svg{
+                width: 19px;
+                margin-right: 10px;
+            }
+            .bell-svg{
+                fill: $center-icon-color;
+            }
+            .sub-text{
+                font-size: 13px;
+            }
+            &:hover{
+                background-color: $hover-dark;
+            }
+        }
+    }
+    &:hover{
+        overflow-y: scroll;
+    }
 }
 
 ::-webkit-scrollbar{
