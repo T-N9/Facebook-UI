@@ -467,8 +467,10 @@ body {
 .right-body {
   width: 22%;
   position: fixed;
+  height: 90vh;
   top: 60px;
   right: 0px;
+  overflow-y: scroll;
 }
 
 .right-body .your-pages {
@@ -479,9 +481,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 24px;
 }
 
@@ -493,13 +492,11 @@ body {
 
 .right-body .your-pages #your-pages-heading #ico {
   padding: 10px;
-  background-color: #18191A;
+  background-color: transparent;
   border-radius: 50%;
-  margin-right: 2px;
-  position: fixed;
-  right: 3px;
+  margin-left: 150px;
   margin-top: -5px;
-  font-size: 10px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -517,7 +514,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: -5px;
   height: 45px;
 }
 
@@ -604,6 +601,92 @@ body {
   background-color: #3A3B3C;
 }
 
+.right-body .contact .contact-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.right-body .contact .contact-heading .contact-heading-h1 {
+  margin-left: 15px;
+  color: #b7b9bd;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.right-body .contact .contact-heading .ico {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: -5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.right-body .contact .contact-heading .ico:hover {
+  background-color: #3A3B3C;
+}
+
+.right-body .contact .contact-heading svg {
+  width: 35px;
+  padding: 7px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 80px;
+  margin-right: 5px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.right-body .contact .contact-heading svg:hover {
+  background-color: #3A3B3C;
+}
+
+.right-body .contact .contact-heading .contact-ico {
+  fill: #b0b3b8;
+}
+
+.right-body .contact .friend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right-body .contact .friend img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.right-body .contact .friend i {
+  color: #58C472;
+  font-size: 6px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: -18px;
+  margin-top: 20px;
+}
+
+.right-body .contact .friend .name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e4e6eb;
+  margin-left: 10px;
+}
+
+.right-body .contact .friend:hover {
+  background-color: #303031;
+}
+
 .right-body .line {
   width: 265px;
   margin: auto;
@@ -611,8 +694,27 @@ body {
   margin-top: 10px;
 }
 
-.right-body:hover {
-  overflow-y: scroll;
+.right-body .edit {
+  background-color: #4E4F50;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 10px;
+  left: 230px;
+}
+
+.right-body .edit svg {
+  width: 20px;
+  margin-top: 5px;
+}
+
+.right-body .edit .edit-svg {
+  fill: white;
 }
 
 ::-webkit-scrollbar {

@@ -401,6 +401,7 @@ body{
 .right-body{
     width: 22%;
     position: fixed;
+    height: 90vh;
     top: 60px;
     right: 0px;
     .your-pages{
@@ -408,7 +409,7 @@ body{
         padding-bottom: 4px;
         #your-pages-heading{
             display: flex;
-            justify-content: space-between;
+            
             margin-top: 24px;
             #your-pages-heading-h1{
                 font-size: 17px;
@@ -417,13 +418,13 @@ body{
             }
             #ico{
                 padding: 10px;
-                background-color: $dark;
+                background-color: transparent;
                 border-radius: 50%;
-                margin-right: 2px;
-                position: fixed;
-                right: 3px;
+                margin-left: 150px;
+                // position: fixed;
+                // right: 3px;
                 margin-top: -5px;
-                font-size: 10px;
+                font-size: 15px;
                 cursor: pointer;
                 &:hover{
                     background-color: $hover-2;
@@ -436,7 +437,7 @@ body{
             padding: 10px;
             border-radius: 10px;
             cursor: pointer;
-            margin-top: 5px;
+            margin-top: -5px;
             height: 45px;
             
             img{
@@ -503,15 +504,110 @@ body{
             }
         }
     }
+    .contact{
+        .contact-heading{
+            display: flex;
+            
+            margin-top: 15px;
+            .contact-heading-h1{
+                margin-left: 15px;
+                color: $text;
+                font-weight: bold;
+                font-size: 17px;
+            }
+            .ico{
+                
+                padding: 10px;
+                background-color: transparent;
+                border-radius: 50%;
+                margin-right: 5px;
+                margin-top: -5px;
+                font-size: 15px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $hover-2;
+                }
+
+            }
+            svg{
+                width: 35px;
+                padding: 7px;
+                background-color: transparent;
+                border-radius: 50%;
+                margin-left: 80px;
+                margin-right: 5px;
+                margin-top: -5px;
+                // position: fixed;
+                // right: 85px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $hover-2;
+                }
+            }
+            .contact-ico{
+                fill: $center-icon-color;
+            }
+        }
+        .friend{
+            display: flex;
+            align-items: center;
+            height: 45px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            img{
+                border-radius: 50%;
+                margin-right: 10px;
+                width: 30px;
+            }
+            i{
+                color: $green;
+                font-size: 6px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: -18px;
+                margin-top: 20px;
+            }
+            .name{
+                font-size: 16px;
+                font-weight: bold;
+                color: $text-2;
+                margin-left: 10px;
+            }
+            &:hover{
+                background-color: $hover-dark;
+            }
+        }
+    }
     .line{
         width: 265px;
         margin: auto;
         border-bottom: 1px solid rgba(255,255,255,.25);
         margin-top: 10px;
     }
-    &:hover{
-        overflow-y: scroll;
+    .edit{
+        background-color: $hover-3;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        position: sticky;
+        bottom: 10px;
+        left:230px;
+        svg{
+            width: 20px;
+           margin-top: 5px;
+        }
+        .edit-svg{
+            fill: white;
+        }
     }
+    // &:hover{
+    //     overflow-y: scroll;
+    // }
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar{
