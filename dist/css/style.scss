@@ -243,8 +243,8 @@ body{
     
     .personal{
         margin-top: 15px;
-        border-bottom: 1px solid rgba(255,255,255,.25);
-        padding-bottom: 8px;
+        
+        padding-bottom: 0px;
         .personal-text{
             margin-left: 10px;
             font-weight: bold;
@@ -404,8 +404,8 @@ body{
     top: 60px;
     right: 0px;
     .your-pages{
-        border-bottom: 1px solid rgba(255,255,255,.25);
-        padding-bottom: 8px;
+        // border-bottom: 1px solid rgba(255,255,255,.25);
+        padding-bottom: 4px;
         #your-pages-heading{
             display: flex;
             justify-content: space-between;
@@ -476,6 +476,39 @@ body{
             }
         }
     }
+    .birthday{
+        margin-top: 18px;
+        .birthday-heading{
+            font-size: 17px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .birthday-section{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px 0 5px 13px;
+            border-radius: 10px;
+            margin-top: 5px;
+            img{
+                width: 25px;
+                margin-right: 10px;
+            }
+            .birthday-text{
+                font-size: 15px;
+                color: $text-2;
+            }
+            &:hover{
+                background-color: $hover-2;
+            }
+        }
+    }
+    .line{
+        width: 265px;
+        margin: auto;
+        border-bottom: 1px solid rgba(255,255,255,.25);
+        margin-top: 10px;
+    }
     &:hover{
         overflow-y: scroll;
     }
@@ -489,3 +522,10 @@ body{
     background-color: $hover-2;
     border-radius: 10px;  
 }
+.line{
+    width: 265px;
+    margin: auto;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    margin-top: 10px;
+}
+
