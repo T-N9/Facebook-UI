@@ -32,7 +32,7 @@ body{
     display: flex;
     position: fixed;
     width: 100%;
-    
+    z-index: 3;
 }
 .left{
     .left-box{
@@ -389,34 +389,98 @@ body{
     .myday{
         display: flex;
         justify-content: center;
-        background-color: wheat; //thissssssssssssssssssssssss
+        background-color: transparent; //thissssssssssssssssssssssss
         padding: 20px 20px 20px 0px;
         #mine-story{
             &:hover{
                 .child{
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                 }
             }
             &:focus{
                 .child{
-                    transform: scale(1.1);
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .oth{
+            &:hover{
+                .child{
+                    transform: scale(1.05);
+                }
+            }
+            &:focus{
+                .child{
+                    transform: scale(1.05);
                 }
             }
         }
         .story{
-            
+            position: relative;
             transition: 0.5s;
             margin-left: 9px;
             width: 113px;
             height: 197px;
-            background-color: cyan;//thissssssssssssssssssss
+            background-color: transparent;//thissssssssssssssssssss
             margin-top: 5px;
             border-radius: 10px;
             cursor: pointer;
+            .parent{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                transition: 0.5s;
+                .p-name{
+                    position: absolute;
+                    z-index: 2;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 15px;
+                    bottom: 5px;
+                    left: 10px;
+                    text-shadow: 1px 1px 1.5px black;
+                }
+                .myday-pro-pic{
+                    width: 40px;
+                    position: absolute;
+                    z-index: 2;
+                    border: 4px solid #147aff;
+                    border-radius: 50%;
+                    top:10px;
+                    left: 10px;
+                }
+                .child{
+                    transition: 0.5s;
+                    height: 100%;
+                    width: 100%;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    filter: blur(0.2px) grayscale(70%);
+                }
+                #story1{
+                    background-image: url(../img/myday1.jpg);
+                    filter: blur(0.8px);
+                }
+                #story2{
+                    background-image: url(../img/myday2.jpg);
+                    filter: blur(0.8px);
+                }
+                #story3{
+                    background-image: url(../img/myday3.jpg);
+                    filter: blur(0.8px);
+                }
+                #story4{
+                    background-image: url(../img/myday4.jpg);
+                    filter: blur(0.8px);
+                }
+            }
             .add-story-pic{
                 transition: 0.5s;
                 width: 113px;
-                height: 117px;
+                height: 127px;
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
                 position: relative;
@@ -429,30 +493,50 @@ body{
                     background-size:cover;
                     background-repeat: no-repeat;
                     background-position: center;
+                    filter: blur(0.2px);
                 }
                 
             }
             .add-story{
                 transition: 0.5s;
-                background-color: $light-dark;
+                background-color: #242526;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                height: 80px;
+                height: 70px;
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
+                position: relative;
                 .add-story-text{
                     color: $text-2;
                     font-weight: bold;
                     font-size: 15px;
+                    margin-top: 15px;
+                }
+                .plus{
+                    width: 40px;
+                    height: 40px;
+                    background-color:#147aff;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 4px solid #242526;
+                    position: absolute;
+                    top: -17px;
+                    
+                    .adding{
+                        margin-top: -6px;
+                        font-size: 34px;
+                        color: white;
+                    }
                 }
                 &:hover{
                     background-color:$hover-dark;
                 }
             }
-            
             &::before{
                 content: "";
                 display: none;
@@ -461,11 +545,12 @@ body{
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color:cyan;
-
+                background-color:rgba(0,0,0,0.1);
+                z-index: 2;
+                border-radius: 10px;
             }
             &:hover{
-                .story::before{
+                &::before{
                     display: block;
                 }
             }

@@ -22,6 +22,7 @@ body {
   display: flex;
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 
 .left .left-box {
@@ -471,37 +472,115 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: wheat;
+  background-color: transparent;
   padding: 20px 20px 20px 0px;
 }
 
 .center-body .myday #mine-story:hover .child {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .center-body .myday #mine-story:focus .child {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.center-body .myday .oth:hover .child {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.center-body .myday .oth:focus .child {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .center-body .myday .story {
+  position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-left: 9px;
   width: 113px;
   height: 197px;
-  background-color: cyan;
+  background-color: transparent;
   margin-top: 5px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.center-body .myday .story .parent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.center-body .myday .story .parent .p-name {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  bottom: 5px;
+  left: 10px;
+  text-shadow: 1px 1px 1.5px black;
+}
+
+.center-body .myday .story .parent .myday-pro-pic {
+  width: 40px;
+  position: absolute;
+  z-index: 2;
+  border: 4px solid #147aff;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.center-body .myday .story .parent .child {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: blur(0.2px) grayscale(70%);
+          filter: blur(0.2px) grayscale(70%);
+}
+
+.center-body .myday .story .parent #story1 {
+  background-image: url(../img/myday1.jpg);
+  -webkit-filter: blur(0.8px);
+          filter: blur(0.8px);
+}
+
+.center-body .myday .story .parent #story2 {
+  background-image: url(../img/myday2.jpg);
+  -webkit-filter: blur(0.8px);
+          filter: blur(0.8px);
+}
+
+.center-body .myday .story .parent #story3 {
+  background-image: url(../img/myday3.jpg);
+  -webkit-filter: blur(0.8px);
+          filter: blur(0.8px);
+}
+
+.center-body .myday .story .parent #story4 {
+  background-image: url(../img/myday4.jpg);
+  -webkit-filter: blur(0.8px);
+          filter: blur(0.8px);
 }
 
 .center-body .myday .story .add-story-pic {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 113px;
-  height: 117px;
+  height: 127px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   position: relative;
@@ -517,12 +596,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-filter: blur(0.2px);
+          filter: blur(0.2px);
 }
 
 .center-body .myday .story .add-story {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background-color: #3A3B3C;
+  background-color: #242526;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,15 +615,42 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 80px;
+  height: 70px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  position: relative;
 }
 
 .center-body .myday .story .add-story .add-story-text {
   color: #e4e6eb;
   font-weight: bold;
   font-size: 15px;
+  margin-top: 15px;
+}
+
+.center-body .myday .story .add-story .plus {
+  width: 40px;
+  height: 40px;
+  background-color: #147aff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid #242526;
+  position: absolute;
+  top: -17px;
+}
+
+.center-body .myday .story .add-story .plus .adding {
+  margin-top: -6px;
+  font-size: 34px;
+  color: white;
 }
 
 .center-body .myday .story .add-story:hover {
@@ -557,10 +665,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: cyan;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  border-radius: 10px;
 }
 
-.center-body .myday .story:hover .story::before {
+.center-body .myday .story:hover::before {
   display: block;
 }
 
