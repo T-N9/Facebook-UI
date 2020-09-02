@@ -458,10 +458,110 @@ body {
 
 .center-body {
   width: 55%;
-  height: 90vh;
+  height: 300vh;
   margin: auto;
   padding-top: 60px;
-  background-color: white;
+  background-color: transparent;
+}
+
+.center-body .myday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: wheat;
+  padding: 20px 20px 20px 0px;
+}
+
+.center-body .myday #mine-story:hover .child {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.center-body .myday #mine-story:focus .child {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.center-body .myday .story {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 9px;
+  width: 113px;
+  height: 197px;
+  background-color: cyan;
+  margin-top: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center-body .myday .story .add-story-pic {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 113px;
+  height: 117px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-body .myday .story .add-story-pic .child {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/profile-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.center-body .myday .story .add-story {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #3A3B3C;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 80px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.center-body .myday .story .add-story .add-story-text {
+  color: #e4e6eb;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.center-body .myday .story .add-story:hover {
+  background-color: #303031;
+}
+
+.center-body .myday .story::before {
+  content: "";
+  display: none;
+  height: 197px;
+  width: 113px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: cyan;
+}
+
+.center-body .myday .story:hover .story::before {
+  display: block;
 }
 
 .right-body {
@@ -715,6 +815,74 @@ body {
 
 .right-body .edit .edit-svg {
   fill: white;
+}
+
+.right-body .groups {
+  margin-top: 18px;
+}
+
+.right-body .groups .group-heading {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.right-body .groups .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right-body .groups .group img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.right-body .groups .group i {
+  color: #58C472;
+  font-size: 6px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: -18px;
+  margin-top: 20px;
+}
+
+.right-body .groups .group .name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e4e6eb;
+  margin-left: 10px;
+}
+
+.right-body .groups .group .plus {
+  font-size: 25px;
+  color: white;
+  width: 28px;
+  height: 28px;
+  background-color: #3A3B3C;
+  padding: 8px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-body .groups .group:hover {
+  background-color: #303031;
 }
 
 ::-webkit-scrollbar {

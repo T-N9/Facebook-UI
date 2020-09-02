@@ -222,17 +222,7 @@ body{
         }
     }
 }
-//body starts
-// .fb-body{
-//     display: flex;
-//     justify-content: space-between;
-//     ::-webkit-scrollbar{
-//         background: transparent;
-//     }
-//     ::-webkit-scrollbar-thumb{
-//         background-color: $hover-3;
-//     }
-// }
+
 
 .left-body{
     width: 22%;
@@ -392,10 +382,95 @@ body{
 }
 .center-body{
     width: 55%;
-    height: 90vh;
+    height: 300vh;
     margin: auto;
     padding-top: 60px;
-    background-color: white;
+    background-color: transparent;//thisssssssssssssss
+    .myday{
+        display: flex;
+        justify-content: center;
+        background-color: wheat; //thissssssssssssssssssssssss
+        padding: 20px 20px 20px 0px;
+        #mine-story{
+            &:hover{
+                .child{
+                    transform: scale(1.1);
+                }
+            }
+            &:focus{
+                .child{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .story{
+            
+            transition: 0.5s;
+            margin-left: 9px;
+            width: 113px;
+            height: 197px;
+            background-color: cyan;//thissssssssssssssssssss
+            margin-top: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            .add-story-pic{
+                transition: 0.5s;
+                width: 113px;
+                height: 117px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                .child{
+                    transition: 0.5s;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../img/profile-pic.jpg);
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                
+            }
+            .add-story{
+                transition: 0.5s;
+                background-color: $light-dark;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 80px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                .add-story-text{
+                    color: $text-2;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                &:hover{
+                    background-color:$hover-dark;
+                }
+            }
+            
+            &::before{
+                content: "";
+                display: none;
+                height: 197px;
+                width:113px ;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color:cyan;
+
+            }
+            &:hover{
+                .story::before{
+                    display: block;
+                }
+            }
+        }
+    }
     
 }
 .right-body{
@@ -604,9 +679,63 @@ body{
             fill: white;
         }
     }
+    .groups{
+        margin-top: 18px;
+        .group-heading{
+            font-size: 17px;
+            font-weight: bold;
+            margin-left: 15px;
+            
+        }
+        .group{
+            display: flex;
+            align-items: center;
+            height: 45px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            img{
+                border-radius: 50%;
+                margin-right: 10px;
+                width: 30px;
+            }
+            i{
+                color: $green;
+                font-size: 6px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: -18px;
+                margin-top: 20px;
+            }
+            .name{
+                font-size: 16px;
+                font-weight: bold;
+                color: $text-2;
+                margin-left: 10px;
+                
+            }
+            .plus{     
+                font-size: 25px;
+                color: white;
+                width: 28px;
+                height: 28px;
+                background-color: $hover-2;
+                padding: 8px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover{
+                background-color: $hover-dark;
+            }
+
+        }
+    }
     // &:hover{
     //     overflow-y: scroll;
     // }
+
     overflow-y: scroll;
 }
 
