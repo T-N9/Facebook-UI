@@ -32,7 +32,7 @@ body{
     display: flex;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
 }
 .left{
     .left-box{
@@ -794,6 +794,183 @@ body{
                 background-color: $hover-3;
                 
             }
+        }
+    }
+    .post{
+        margin: 16px auto 10px 115px;
+        background-color: #242526;
+        width: 500px;
+        height: 680px;
+        border-radius: 10px;
+        position: relative;
+        .upper-post{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 15px;
+            position: absolute;
+            .acc-pro{
+                border-radius: 50%;
+                border: 2px solid #147aff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    border-radius: 50%;
+                    border: 2px solid #242526;
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+            .name-time{
+                margin-left: 10px;
+                strong{
+                    color: $text-2;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .time{
+                    font-size: 13px;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .dot{
+                    margin-left: 4px;
+                    margin-right: 3px;
+                    position: absolute;
+                    top: 18px;
+                }
+                #ico{
+                    font-size: 13px;
+                    margin-left: 8px;
+                }
+            }
+            #globe{
+                margin-left: 270px;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover{
+                    background-color: $hover-2;
+                }
+            }
+        }
+        .caption{
+            width: 100%;
+            position: absolute;
+            margin-top: 65px;
+            .txt{
+                margin-left: 16.5px;
+                font-weight: 500;
+                color: $text-2;
+            }
+        }
+        .post-img{
+            margin-top: 100px;
+            width: 100%;
+            position: absolute;
+            cursor: pointer;
+        }
+        .react-comment-share{
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            bottom: 36px;
+            display: flex;
+            align-items: center;
+            .reacts{
+                position: absolute;
+                margin-left: 18px;
+                width: 80px;
+                height: 30px;
+                .reaction{
+                    width: 23px;
+                    cursor: pointer;
+                    border: 2px solid #242526;
+                    border-radius: 50%;
+                }
+                #react1{
+                    z-index: 3;
+                    position: absolute;
+                }
+                #react2{
+                    margin-left: 19px;
+                    z-index: 2;
+                    position: absolute;
+                }
+                #react3{
+                    margin-left: 37px;
+                    z-index: 1;
+                    position: absolute;
+                }
+            }
+            #number{
+                position: absolute;
+                top: 6px;
+                left: 83px;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            #comment{
+                position: absolute;
+                top: 6px;
+                right: 104px;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            #share{
+                position: absolute;
+                top: 6px;
+                right: 21px;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .action{
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 4.5px;
+            .sub-action{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 10px 5px 10px;
+                width: 156px;
+                cursor: pointer;
+                border-radius: 5px;
+                img{
+                    margin-right: 7px;
+                }
+                span{
+                    font-weight: 500;
+                }
+                &:hover{
+                   background-color: $hover-2;
+                   
+                }
+            }
+            .liking{
+                
+                margin-left: 17px;
+            }
+            .commenting{
+                
+                width: 153px;
+            }
+            
         }
     }
     

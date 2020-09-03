@@ -22,7 +22,7 @@ body {
   display: flex;
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
 }
 
 .left .left-box {
@@ -983,6 +983,238 @@ body {
 
 .center-body .room-area .to-right:hover {
   background-color: #4E4F50;
+}
+
+.center-body .post {
+  margin: 16px auto 10px 115px;
+  background-color: #242526;
+  width: 500px;
+  height: 680px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.center-body .post .upper-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  position: absolute;
+}
+
+.center-body .post .upper-post .acc-pro {
+  border-radius: 50%;
+  border: 2px solid #147aff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-body .post .upper-post .acc-pro img {
+  border-radius: 50%;
+  border: 2px solid #242526;
+  width: 38px;
+  height: 38px;
+}
+
+.center-body .post .upper-post .name-time {
+  margin-left: 10px;
+}
+
+.center-body .post .upper-post .name-time strong {
+  color: #e4e6eb;
+  cursor: pointer;
+}
+
+.center-body .post .upper-post .name-time strong:hover {
+  text-decoration: underline;
+}
+
+.center-body .post .upper-post .name-time .time {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.center-body .post .upper-post .name-time .time:hover {
+  text-decoration: underline;
+}
+
+.center-body .post .upper-post .name-time .dot {
+  margin-left: 4px;
+  margin-right: 3px;
+  position: absolute;
+  top: 18px;
+}
+
+.center-body .post .upper-post .name-time #ico {
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+.center-body .post .upper-post #globe {
+  margin-left: 270px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.center-body .post .upper-post #globe:hover {
+  background-color: #3A3B3C;
+}
+
+.center-body .post .caption {
+  width: 100%;
+  position: absolute;
+  margin-top: 65px;
+}
+
+.center-body .post .caption .txt {
+  margin-left: 16.5px;
+  font-weight: 500;
+  color: #e4e6eb;
+}
+
+.center-body .post .post-img {
+  margin-top: 100px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.center-body .post .react-comment-share {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-body .post .react-comment-share .reacts {
+  position: absolute;
+  margin-left: 18px;
+  width: 80px;
+  height: 30px;
+}
+
+.center-body .post .react-comment-share .reacts .reaction {
+  width: 23px;
+  cursor: pointer;
+  border: 2px solid #242526;
+  border-radius: 50%;
+}
+
+.center-body .post .react-comment-share .reacts #react1 {
+  z-index: 3;
+  position: absolute;
+}
+
+.center-body .post .react-comment-share .reacts #react2 {
+  margin-left: 19px;
+  z-index: 2;
+  position: absolute;
+}
+
+.center-body .post .react-comment-share .reacts #react3 {
+  margin-left: 37px;
+  z-index: 1;
+  position: absolute;
+}
+
+.center-body .post .react-comment-share #number {
+  position: absolute;
+  top: 6px;
+  left: 83px;
+  cursor: pointer;
+}
+
+.center-body .post .react-comment-share #number:hover {
+  text-decoration: underline;
+}
+
+.center-body .post .react-comment-share #comment {
+  position: absolute;
+  top: 6px;
+  right: 104px;
+  cursor: pointer;
+}
+
+.center-body .post .react-comment-share #comment:hover {
+  text-decoration: underline;
+}
+
+.center-body .post .react-comment-share #share {
+  position: absolute;
+  top: 6px;
+  right: 21px;
+  cursor: pointer;
+}
+
+.center-body .post .react-comment-share #share:hover {
+  text-decoration: underline;
+}
+
+.center-body .post .action {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 4.5px;
+}
+
+.center-body .post .action .sub-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 10px 5px 10px;
+  width: 156px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.center-body .post .action .sub-action img {
+  margin-right: 7px;
+}
+
+.center-body .post .action .sub-action span {
+  font-weight: 500;
+}
+
+.center-body .post .action .sub-action:hover {
+  background-color: #3A3B3C;
+}
+
+.center-body .post .action .liking {
+  margin-left: 17px;
+}
+
+.center-body .post .action .commenting {
+  width: 153px;
 }
 
 .right-body {
