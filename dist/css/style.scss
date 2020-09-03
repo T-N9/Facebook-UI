@@ -391,6 +391,26 @@ body{
         justify-content: center;
         background-color: transparent; //thissssssssssssssssssssssss
         padding: 20px 20px 20px 0px;
+        position: relative;
+        .to-left{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            padding: 10px;
+            background-color: $hover-2;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 100px;
+            right: 52px;
+            cursor: pointer;
+            &:hover{
+                background-color: $hover-3;
+                
+            }
+        }
         #mine-story{
             &:hover{
                 .child{
@@ -418,7 +438,7 @@ body{
         .story{
             position: relative;
             transition: 0.5s;
-            margin-left: 9px;
+            margin-left: 7px;
             width: 113px;
             height: 197px;
             background-color: transparent;//thissssssssssssssssssss
@@ -552,6 +572,71 @@ body{
             &:hover{
                 &::before{
                     display: block;
+                }
+            }
+        }
+    }
+    .posting-area{
+        margin: 5px auto 10px 115px;
+        background-color: #242526;
+        width: 500px;
+        height: 122px;
+        border-radius: 10px;
+        position: relative;
+        #pro-sec{
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+        .my-mind{
+            display: inline-block;
+            position: absolute;
+            top: 11px;
+            right: 10px;
+            width: 420px;
+            height: 40px;
+            background-color: $hover-2;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            span{
+                font-size: 17px;
+                margin-left: -160px;
+            }
+            &:hover{
+                background-color: $hover-3;
+            }
+        }
+        .sub-posting-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: transparent;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            .area{
+                width: 156px;
+                background-color: transparent;
+                padding: 7px 15px 7px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                cursor: pointer;
+                img{
+                    margin-right: 5px;
+                }
+                span{
+                    font-weight: 500;
+                }
+                &:hover{
+                    background-color: $hover-2;
                 }
             }
         }
