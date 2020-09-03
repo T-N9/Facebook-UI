@@ -794,6 +794,197 @@ body {
   background-color: #3A3B3C;
 }
 
+.center-body .room-area {
+  margin: 16px auto 10px 115px;
+  background-color: #242526;
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.center-body .room-area .upper-div {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 13px;
+  margin-left: 18px;
+}
+
+.center-body .room-area .upper-div strong {
+  margin-left: 8px;
+}
+
+.center-body .room-area .upper-div .dot {
+  margin-left: 3px;
+  margin-top: -6px;
+  margin-right: 3px;
+}
+
+.center-body .room-area .upper-div i {
+  margin-left: 7px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.center-body .room-area .upper-div i:hover {
+  background-color: #3A3B3C;
+}
+
+.center-body .room-area .upper-div .create-room {
+  color: #2d88ff;
+  cursor: pointer;
+  margin-left: 90px;
+}
+
+.center-body .room-area .room-acc {
+  margin-left: 17px;
+  width: 40px;
+  height: 40px;
+  margin-top: 50px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.center-body .room-area .room-acc img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.center-body .room-area .room-acc span {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: -4px;
+  left: 10px;
+  z-index: 2;
+}
+
+.center-body .room-area .room-acc .point {
+  color: #58C472;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  font-size: 8px;
+  position: absolute;
+  top: 27px;
+  right: -1px;
+}
+
+.center-body .room-area .room-acc::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.center-body .room-area .room-acc:hover::before {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.center-body .room-area .p1 {
+  margin-left: 73px;
+}
+
+.center-body .room-area .p1::before {
+  background: transparent;
+}
+
+.center-body .room-area .p2 {
+  margin-left: 129px;
+}
+
+.center-body .room-area .p2::before {
+  background: transparent;
+}
+
+.center-body .room-area .p3 {
+  margin-left: 188px;
+}
+
+.center-body .room-area .p3::before {
+  background: transparent;
+}
+
+.center-body .room-area .p4 {
+  margin-left: 241px;
+}
+
+.center-body .room-area .p4::before {
+  background: transparent;
+}
+
+.center-body .room-area .p5 {
+  margin-left: 296px;
+}
+
+.center-body .room-area .p5::before {
+  background: transparent;
+}
+
+.center-body .room-area .p6 {
+  margin-left: 350px;
+}
+
+.center-body .room-area .p6::before {
+  background: transparent;
+}
+
+.center-body .room-area .p7 {
+  margin-left: 405px;
+}
+
+.center-body .room-area .p7::before {
+  background: transparent;
+}
+
+.center-body .room-area .p8 {
+  margin-left: 459px;
+}
+
+.center-body .room-area .p8::before {
+  background: transparent;
+}
+
+.center-body .room-area .to-right {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  padding: 10px;
+  background-color: #3A3B3C;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 44px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.center-body .room-area .to-right:hover {
+  background-color: #4E4F50;
+}
+
 .right-body {
   width: 22%;
   position: fixed;
